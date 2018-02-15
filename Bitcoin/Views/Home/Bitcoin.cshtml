@@ -1,0 +1,74 @@
+﻿
+@{
+	ViewBag.Title = "Bitcoin";
+}
+
+<h2>Bitcoin</h2>
+
+<div class="row">
+	<div class="col-lg-12">
+		<div class="panel panel-default">
+			<div class="panel-heading clearfix">
+				<h3 class="panel-title">Welcome to Bitcoin</h3>
+				<ul class="panel-tool-options">
+					<li><a data-rel="collapse" href="#"><i class="icon-down-open"></i></a></li>
+					<li><a data-rel="reload" href="#"><i class="icon-arrows-ccw"></i></a></li>
+					<li><a data-rel="close" href="#"><i class="icon-cancel"></i></a></li>
+				</ul>
+			</div>
+			<div class="panel-body">
+				<form id="rootwizard" class="form-horizontal form-wizard">
+					<div class="wizard-navbar">
+						<ul>
+							<li class="active"><a href="#tab1" data-toggle="tab"><span>1</span> All</a></li>
+							<li ><a href="#tab2" data-toggle="tab"><span>2</span> Sent</a></li>
+							<li><a href="#tab3" data-toggle="tab"><span>3</span> Received</a></li>
+							<li><a href="#tab4" data-toggle="tab"><span>4</span> Transferred</a></li>
+
+						</ul>
+					</div>
+					<div class="tab-content">
+						<div class="tab-pane active" id="tab1">
+						   
+							<div class="flex-column mbl border-bottom black ph-25 center">
+								<div class="flex-center flex-justify">
+									<i class="icon-tx h3 mrm"></i><h3 class="em-300" >Your Transactions</h3>
+								</div>
+								<p class="em-300" >Transactions occur when you receive and send bitcoin.</p>
+							</div>
+							<div class="flex flex-center-mobile">
+								<button class="btn button-default button-short-wide type-h5 mrm" ng-click="send()">
+									<i class="mrs media-middle icon-send">
+									</i><span class="em-300" >Send</span>
+								</button>
+								<div class="btn-group">
+									<button class="btn button-default button-short-wide type-h5 pos-rel" ng-click="request()">
+										<i class="mrs media-middle icon-receive">
+										</i><span class="em-300">Request</span>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane " id="tab2">
+							Step: 2
+						</div>
+						<div class="tab-pane" id="tab3">
+							Step: 3
+						</div>
+						<div class="tab-pane" id="tab4">
+							Step: 4
+						</div>
+
+						<ul class="pager wizard">
+							<li class="previous first"><a href="javascript:void(0)">First</a></li>
+							<li class="previous"><a href="javascript:void(0)"><i class="icon-left-open"></i>Previous</a></li>
+							<li class="next last"><a href="javascript:void(0)">Last</a> </li>
+							<li class="next"><a href="javascript:void(0)">Next <i class="icon-right-open"></i></a> </li>
+						</ul>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="~/ContentAdmin/js/wizardForEase.js"></script>
